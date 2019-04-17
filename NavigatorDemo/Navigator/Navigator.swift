@@ -12,4 +12,5 @@ import UIKit
 protocol Navigator {
     associatedtype Destination
     func navigate(To destination: Destination)
+    func present(_ destination: Destination, completion: @escaping (()->Void))
 }

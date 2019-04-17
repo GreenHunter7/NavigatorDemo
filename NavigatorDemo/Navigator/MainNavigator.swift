@@ -33,10 +33,10 @@ extension MainNavigator: Navigator{
         self.navigationController.pushViewController(vc, animated: true)
     }
     
-    func persent(_ destination: Destination, complition: @escaping (()->Void)) {
+    func present(_ destination: Destination, completion: @escaping (() -> Void)) {
         let vc = makeViewController(for: destination)
         self.navigationController.present(vc, animated: true) {
-            complition()
+            completion()
         }
     }
     
