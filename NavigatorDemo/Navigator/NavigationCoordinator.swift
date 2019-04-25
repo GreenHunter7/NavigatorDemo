@@ -17,9 +17,7 @@ class NavigationCoordinator{
     
     var mainNavigator: MainNavigator!
     
-    init() {
-        
+    private init() {
         mainNavigator = MainNavigator(navigationController: nvc)
-        
     }
 }

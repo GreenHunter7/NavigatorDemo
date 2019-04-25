@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//What
 protocol Navigator {
     associatedtype Destination
     func navigate(To destination: Destination)

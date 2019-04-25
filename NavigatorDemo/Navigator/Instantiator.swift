@@ -10,5 +10,15 @@ import Foundation
 import UIKit
 
 protocol Instantiator {
-    static func InstantiateFormStoryBoard(_ storyboard: UIStoryboard) -> BaseViewController
+    static func InstantiateFormStoryBoard<T: UIViewController>(_ storyboard: UIStoryboard, vc: T) -> T?
+}
+
+extension Instantiator where Self: UIViewController{
+    static func InstantiateFormStoryBoard<T: UIViewController>(_ storyboard: UIStoryboard, vc: T) -> T?{
+        let identifier = String(describing: vc.self)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as? T else{
+            return nil
+        }
+        return viewController
+    }
 }

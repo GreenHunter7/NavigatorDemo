@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, Instantiator {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,12 +16,4 @@ class BaseViewController: UIViewController {
     }
 
 }
-extension BaseViewController: Instantiator{
-    static func InstantiateFormStoryBoard(_ storyboard: UIStoryboard) -> BaseViewController {
-        let identifire = String(describing: self.self)
-        guard let viewController = storyboard.instantiateViewController(withIdentifier: identifire) as? BaseViewController else{
-            return BaseViewController()
-        }
-        return viewController
-    }
-}
+
