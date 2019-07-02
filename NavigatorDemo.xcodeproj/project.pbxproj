@@ -20,7 +20,6 @@
 		A12E049A22674E96000CA7B2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E049922674E96000CA7B2 /* BaseViewController.swift */; };
 		A12E049C22675695000CA7B2 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E049B22675695000CA7B2 /* NavigationCoordinator.swift */; };
 		A12E049E22675B03000CA7B2 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E049D22675B03000CA7B2 /* MainNavigator.swift */; };
-		A12E04A1226761BC000CA7B2 /* MHDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E04A0226761BC000CA7B2 /* MHDestination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		A12E049922674E96000CA7B2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A12E049B22675695000CA7B2 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		A12E049D22675B03000CA7B2 /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
-		A12E04A0226761BC000CA7B2 /* MHDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHDestination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +145,6 @@
 				A12E049722674E69000CA7B2 /* Instantiator.swift */,
 				A12E049D22675B03000CA7B2 /* MainNavigator.swift */,
 				A12E049B22675695000CA7B2 /* NavigationCoordinator.swift */,
-				A12E04A0226761BC000CA7B2 /* MHDestination.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -296,7 +293,6 @@
 				A12E049822674E69000CA7B2 /* Instantiator.swift in Sources */,
 				A12E046522673373000CA7B2 /* ViewController.swift in Sources */,
 				A12E049622674C73000CA7B2 /* SecondeViewController.swift in Sources */,
-				A12E04A1226761BC000CA7B2 /* MHDestination.swift in Sources */,
 				A12E046322673373000CA7B2 /* AppDelegate.swift in Sources */,
 				A12E04922267339F000CA7B2 /* Navigator.swift in Sources */,
 				A12E049A22674E96000CA7B2 /* BaseViewController.swift in Sources */,
@@ -485,7 +481,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HNF.NavigatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -503,7 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HNF.NavigatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
